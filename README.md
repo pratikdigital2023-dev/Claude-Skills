@@ -1,7 +1,9 @@
 # Claude-Skills
 
-A curated, installable collection of **1,826 Claude skills** aggregated from
-fourteen open-source skill repositories. Every skill in this repo is a standard
+A curated, installable collection of **1,862 Claude skills** aggregated from
+fourteen open-source skill repositories plus a purpose-built **website-delivery**
+collection authored for end-to-end agency-grade web projects. Every skill in
+this repo is a standard
 [Claude Code Skill](https://docs.claude.com/en/docs/claude-code/skills) — a
 folder containing a `SKILL.md` file with YAML frontmatter (`name`,
 `description`) and any supporting scripts/resources Claude needs to load on
@@ -44,10 +46,37 @@ After linking, run `/skills` in Claude Code to see them listed.
 | [caveman-claude](skills/caveman-claude) | 1 | "caveman" coding-style skill |
 | [antigravity-guanyang](skills/antigravity-guanyang) | 40 | guanyang/antigravity-skills (unique only) |
 | [antigravity-rmyndharis](skills/antigravity-rmyndharis) | 304 | rmyndharis/antigravity-skills (unique only) |
+| [website-delivery](skills/website-delivery) | 36 | Purpose-built end-to-end web project delivery skills |
 
-**Total: 1,826 skills, ~64 MB.** (Antigravity collections are deduplicated
+**Total: 1,862 skills, ~65 MB.** (Antigravity collections are deduplicated
 against the rest of the repo by skill name; 20 overlapping names — e.g.
 `code-reviewer`, `mcp-builder`, `canvas-design` — were skipped.)
+
+## website-delivery collection
+
+A 36-skill, opinionated playbook for shipping a $50K-tier agency website
+end-to-end, organized by project phase:
+
+- **Discovery & scoping** (3): project-proposal-writer, client-kickoff,
+  scope-creep-guard
+- **Information architecture** (3): sitemap-and-ia, user-journey-mapper,
+  wireframe-spec
+- **Design ops** (2): figma-to-code-handoff, motion-design-patterns
+- **CMS** (5): sanity-cms-setup, payload-cms-setup, contentful-integration,
+  headless-wordpress, webflow-export-and-migrate
+- **Commerce** (3): stripe-checkout-end-to-end, shopify-storefront-headless,
+  subscription-billing
+- **Content & assets** (3): content-migration, image-pipeline,
+  transactional-email
+- **Legal & compliance** (4): cookie-consent, ccpa-and-dsar,
+  privacy-policy-and-tos-generator, accessibility-statement
+- **Performance & observability** (4): lighthouse-ci, sentry-setup,
+  uptime-monitoring, edge-caching-strategy
+- **Infrastructure & launch** (3): dns-ssl-cdn-setup, go-live-runbook,
+  redirect-map-builder
+- **QA** (3): cross-browser-matrix, visual-regression, uat-runbook
+- **Post-launch handoff** (3): client-training-handbook,
+  maintenance-retainer-sow, analytics-handover
 
 ## Structure
 
@@ -101,3 +130,4 @@ Each leaf folder with a `SKILL.md` is a standalone, self-contained skill.
 11. ui-ux-pro-max-skill (main)
 12. guanyang/antigravity-skills (cloned from GitHub, unique skills only)
 13. rmyndharis/antigravity-skills (cloned from GitHub, unique skills only)
+14. website-delivery (purpose-built for this repo)
