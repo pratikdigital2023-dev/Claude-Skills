@@ -1,7 +1,7 @@
 # Claude-Skills
 
-A curated, installable collection of **1,482 Claude skills** aggregated from
-twelve open-source skill repositories. Every skill in this repo is a standard
+A curated, installable collection of **1,826 Claude skills** aggregated from
+fourteen open-source skill repositories. Every skill in this repo is a standard
 [Claude Code Skill](https://docs.claude.com/en/docs/claude-code/skills) — a
 folder containing a `SKILL.md` file with YAML frontmatter (`name`,
 `description`) and any supporting scripts/resources Claude needs to load on
@@ -42,8 +42,12 @@ After linking, run `/skills` in Claude Code to see them listed.
 | [agent-skills](skills/agent-skills) | 7 | React / Vercel agent skills |
 | [claude-marketplace](skills/claude-marketplace) | 4 | accesslint accessibility skills |
 | [caveman-claude](skills/caveman-claude) | 1 | "caveman" coding-style skill |
+| [antigravity-guanyang](skills/antigravity-guanyang) | 40 | guanyang/antigravity-skills (unique only) |
+| [antigravity-rmyndharis](skills/antigravity-rmyndharis) | 304 | rmyndharis/antigravity-skills (unique only) |
 
-**Total: 1,482 skills, ~50 MB.**
+**Total: 1,826 skills, ~64 MB.** (Antigravity collections are deduplicated
+against the rest of the repo by skill name; 20 overlapping names — e.g.
+`code-reviewer`, `mcp-builder`, `canvas-design` — were skipped.)
 
 ## Structure
 
@@ -95,3 +99,5 @@ Each leaf folder with a `SKILL.md` is a standalone, self-contained skill.
 9. pg-aiguide (main)
 10. skills / Prisma (main)
 11. ui-ux-pro-max-skill (main)
+12. guanyang/antigravity-skills (cloned from GitHub, unique skills only)
+13. rmyndharis/antigravity-skills (cloned from GitHub, unique skills only)
